@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index",
-    "net-start": "./node_modules/.bin/netlify-lambda serve src",
-    "net-build": "./node_modules/.bin/netlify-lambda build src"
+    "dev": "nodemon index"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexAlybin/ai-image-generator.git"
+    "url": "git+https://github.com/AlexAlybin/ai-image-generator-servers.git"
   },
   "author": "",
   "license": "ISC",
@@ -20,12 +18,9 @@
   },
   "homepage": "https://github.com/AlexAlybin/ai-image-generator#readme",
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "netlify-lambda": "^2.0.15",
-    "openai": "^3.1.0",
-    "serverless-http": "^3.1.0"
+    "openai": "^3.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
