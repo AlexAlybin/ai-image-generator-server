@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexAlybin/ai-image-generator-servers.git"
+    "url": "git+https://github.com/AlexAlybin/ai-image-generator-server.git"
   },
   "author": "",
   "license": "ISC",

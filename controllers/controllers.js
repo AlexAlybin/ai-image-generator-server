@@ -1,6 +1,5 @@
 const openai = require("../openai/config")
 const generateImage = async (req, res) => {
-    console.log(req.body)
     const {prompt, size, count} = req.body;
     try {
         const response = await openai.createImage({
@@ -9,9 +8,9 @@ const generateImage = async (req, res) => {
             size: size === "small" ? "256x256" : size === "medium" ? "512x512" : "1024x1024"
         })
 
-        const images = response.data?.data
+        const images = response.data?.data?.images
 
-        res.status(200).json({success: true, images})
+        res.status(200).json({images})
     } catch (e) {
         res.status(400).json({message: `ERROR generating image - ${e.message}`})
     }
